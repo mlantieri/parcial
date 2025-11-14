@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[tema="oscuro"] {
+  --bg-color: #121212;
+  --text-color: #e8e8e8;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  background-color: #566fa1;
+  padding: 2rem;
+}
+
+#titulo {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+
+#menu {
+  margin: 1rem;
+  width: 50vw;
+}
+
+#menu-items {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#menu-items li a {
+  background-color: lightblue;
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#presentacion {
+  display: flex;
+  align-items: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  height: 55vh;
+  border-radius: 200px 30px 30px 200px;
+  /*box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);*/
+}
+/*
+#presentacion:hover {
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+*/
+img {
+  margin-right: 4rem;
+  height: 30vh;
+  border: 2px solid #566fa1;
+  border-radius: 80%;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  transition: all 2s ease-in-out 50ms;
+  transition-duration: 200ms;
+  transition-delay: 10ms;
+}
+
+/* img:hover {
+  border-radius: 30px;
+} */
+
+#nombre {
+  margin-bottom: 3rem;
+}
+
+#datos {
+  display: grid;
+  grid:
+    "tarjeta tarjeta"
+    "tarjeta tarjeta";
+  gap: 4rem;
+  margin: 4rem;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  background-color: lightgray;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.tarjeta h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+footer {
+  background-color: lightgray;
+}
+
+form {
+  display: grid;
+  grid:
+    "cajon cajon"
+    "cajon";
+  margin: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+form div label {
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-size: x-large;
+  font-style: normal;
+  color: #f3d234;
+  text-shadow: 1px 2px black;
+  text-wrap: 1px;
+  margin-right: 8%;
+}
+
+input[type="text"] {
+  font-family: "Comic Sans MS";
+  margin-top: 1%;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #f3d234;
+}

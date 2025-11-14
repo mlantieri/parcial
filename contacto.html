@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Ficha</title>
+  </head>
+  <body>
+    <header>
+      <section id="encabezado">
+        <nav id="titulo">
+          <h1>Ficha Personal</h1>
+          <p>Perfil de Estudiante</p>
+        </nav>
+        <button id="tema">Claro/Oscuro</button>
+      </section>
+    </header>
+    <main>
+      <section id="presentacion">
+        <div id="imagen">
+          <img src="img/foto.jpg" alt="Foto perfil" />
+        </div>
+        <div>
+          <div id="nombre">
+            <h1>Mateo Lantieri</h1>
+          </div>
+          <nav id="menu">
+            <ul id="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a
+                  href="https://mlantieri.github.io/local-comercial/"
+                  target="_blank"
+                  >Local Comercial</a
+                >
+              </li>
+              <li>
+                <a href="https://mlantieri.github.io/FanPage/" target="_blank"
+                  >Fan Page</a
+                >
+              </li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section id="form">
+        <h2>Contacto</h2>
+        <form action="mailto:mlantieri@uade.edu.ar">
+          <div class="cajon">
+            <label for="nombre">Nombre completo:</label><br />
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+          <div class="cajon">
+            <label for="email">Email:</label><br />
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="cajon">
+            <label for="comentarios">Comentarios:</label><br />
+            <input type="text" id="comentarios" name="comentarios" />
+          </div>
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>Todos los derechos reservados</p>
+      </div>
+      <div>
+        <button class="boton"><a href=""></a></button>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
