@@ -112,41 +112,22 @@ form {
   grid:
     "cajon cajon"
     "cajon";
-  margin: 5%;
-  justify-content: center;
-  align-items: center;
+  margin: 6rem;
+  gap: 2rem;
 }
 
 form div {
-  display: flex;
-  align-items: center;
-  margin: 1%;
-}
-
-form div label {
-  font-family: "Comic Sans MS";
-  font-weight: bold;
-  font-size: x-large;
-  font-style: normal;
-  color: #f3d234;
-  text-shadow: 1px 2px black;
-  text-wrap: 1px;
-  margin-right: 8%;
+  display: grid;
 }
 
 input[type="text"] {
-  font-family: "Comic Sans MS";
-  margin-top: 1%;
-  padding: 8px;
-  border: 2px solid black;
-  border-radius: 5px;
-  box-sizing: border-box;
+  padding: 0.6rem;
+  border: 1px solid lightgray;
+  background-color: lightgray;
 }
 
 input[type="submit"] {
-  font-family: "Comic Sans MS";
   font-weight: bold;
-  font-size: larger;
   padding: 5px 10px;
   border: 1px solid black;
   border-radius: 5px;
@@ -154,5 +135,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #f3d234;
+  background-color: #566fa1;
 }

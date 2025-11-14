@@ -45,9 +45,9 @@
           </nav>
         </div>
       </section>
-      <section id="form">
+      <section>
         <h2>Contacto</h2>
-        <form action="mailto:mlantieri@uade.edu.ar">
+        <form id="form" action="mailto:mlantieri@uade.edu.ar">
           <div class="cajon">
             <label for="nombre">Nombre completo:</label><br />
             <input type="text" id="nombre" name="nombre" />
@@ -64,6 +64,7 @@
             <input type="submit" value="Enviar" />
           </div>
         </form>
+        <p id="error" style="color: red"></p>
       </section>
     </main>
     <footer>
@@ -71,7 +72,9 @@
         <p>Todos los derechos reservados</p>
       </div>
       <div>
-        <button class="boton"><a href=""></a></button>
+        <button class="boton">
+          <a href="https://github.com/mlantieri/parcial.git">Ver en GitHub</a>
+        </button>
       </div>
     </footer>
     <script src="scripts.js"></script>
